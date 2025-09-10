@@ -5,11 +5,11 @@ from fastapi import FastAPI
 App = FastAPI()
 
 # 127.0.0.1:8000/
-@App.get("/")
+@App.get("/helloworld")
 async def root():
     return {"massage": "Hello World"}
 
 # 127.0.0.1:8000/teste1
-@App.get("/teste1")
+@App.get("/teste")
 async def funcaoteste():
     return {"teste": True, "num_aleatorio": random.randint(0, 1000)}
