@@ -13,9 +13,9 @@ jobs:
       - name: Simulando COntinuous Delivery
         uses: actions/upload-artifact@v4
         with:
-          name: projetozipado.zip
+          name: projetozipado
           path: |
-            '**.py'
+            **.py
             README.md
 
   deploy:
