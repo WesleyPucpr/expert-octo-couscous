@@ -13,7 +13,7 @@ jobs:
       - name: Simulando COntinuous Delivery
         uses: actions/upload-artifact@v4
         with:
-          name: projetozipado.zip
+          name: projetozipado
           path: |
             '**.py'
             README.md
@@ -24,6 +24,6 @@ jobs:
     steps:
       - uses: actions/download-artifact@v5
         with:
-          name: projetozipado.zip
+          name: projetozipado
       - name: Display structure of downloaded files
         run: ls -R
